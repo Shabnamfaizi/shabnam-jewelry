@@ -1,41 +1,0 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>تسویه حساب - شبنم جواهر</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-pink-50 text-gray-800">
-    <header class="bg-white shadow-md p-4 sticky top-0 z-50">
-      <div class="container mx-auto flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-pink-600">تسویه حساب</h1>
-        <a href="index.html" class="text-pink-500 hover:underline">بازگشت به فروشگاه</a>
-      </div>
-    </header>
-
-    <section class="container mx-auto py-10 px-4">
-      <h2 class="text-2xl font-bold text-pink-600 mb-6">اطلاعات پرداخت</h2>
-      <form id="paymentForm" class="bg-white p-6 rounded shadow grid gap-4 max-w-lg mx-auto">
-        <input type="text" placeholder="نام کامل" required class="p-2 border rounded" />
-        <input type="email" placeholder="ایمیل" required class="p-2 border rounded" />
-        <input type="tel" placeholder="شماره تماس" required class="p-2 border rounded" />
-        <textarea placeholder="آدرس کامل" required class="p-2 border rounded"></textarea>
-        <select class="p-2 border rounded" required>
-          <option value="">روش پرداخت را انتخاب کنید</option>
-          <option>پرداخت آنلاین</option>
-          <option>پرداخت در محل</option>
-        </select>
-        <button type="submit" class="bg-pink-500 text-white py-2 rounded">پرداخت</button>
-      </form>
-    </section>
-
-    <script>
-      document.getElementById('paymentForm').addEventListener('submit', function (e) {
-        e.preventDefault();
-        alert('پرداخت با موفقیت انجام شد! متشکریم از خرید شما 💖');
-        window.location.href = 'index.html';
-      });
-    </script>
-  </body>
-</html>
