@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>سبد خرید - شبنم جواهر</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-50 text-gray-800">
+
+<!-- Header -->
+<header class="bg-white shadow-md p-4 sticky top-0 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-pink-600">سبد خرید</h1>
+    <a href="index.html" class="text-pink-500 hover:underline">بازگشت به فروشگاه</a>
+  </div>
+</header>
+
+<!-- Cart Items -->
+<section class="container mx-auto py-10 px-4">
+  <h2 class="text-2xl font-bold text-pink-600 mb-6">محصولات در سبد</h2>
+  <div class="bg-white rounded shadow p-4 mb-6">
+    <p class="mb-2">انگشتر زنانه طلا - ۱۲,۵۰۰,۰۰۰ تومان</p>
+    <p class="mb-2">دستبند طلا مینیمال - ۸,۷۰۰,۰۰۰ تومان</p>
+    <p class="mb-2">گردنبند طلا ظریف - ۱۰,۳۰۰,۰۰۰ تومان</p>
+    <hr class="my-4" />
+    <p class="font-bold">جمع کل: ۳۱,۵۰۰,۰۰۰ تومان</p>
+  </div>
+
+  <!-- Payment Form -->
+  <h3 class="text-xl font-bold mb-4">اطلاعات پرداخت</h3>
+  <form class="grid gap-4 max-w-md bg-white p-4 rounded shadow">
+    <input type="text" placeholder="نام کامل" class="p-2 border rounded" required />
+    <input type="email" placeholder="ایمیل" class="p-2 border rounded" required />
+    <input type="text" placeholder="شماره تماس" class="p-2 border rounded" required />
+    <input type="text" placeholder="آدرس" class="p-2 border rounded" required />
+    <button class="bg-pink-500 text-white py-2 rounded">پرداخت</button>
+  </form>
+</section>
+
+<footer class="text-center py-4 bg-white mt-10 text-sm text-gray-500">
+  © 2025 فروشگاه شبنم فایضی. همه حقوق محفوظ است.
+</footer>
+
+</body>
+</html>
